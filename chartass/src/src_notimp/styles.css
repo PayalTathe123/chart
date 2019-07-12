@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    padding-top: 5px;
+}
+a{
+    color:black;
+}
+.footer{
+    height:150px;
+    background:blue;
+    color:black;
+    margin-top: 20px;
+}
+.pagecontent{
+    min-height:400px;
+}
+#homenav{
+margin-top: 0px;
+background-color: brown;
+color: black;
+float: right;
+}

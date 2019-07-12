@@ -1,0 +1,31 @@
+﻿<div class="row homenav" style="margin-top: 0px; background-color:brown;">
+<ul class="nav navbar-nav ">
+    <li class="nav-item active " style="color:black;">
+      <a [routerLink]="['/']">Home</a>
+    </li>
+    <li class="nav-item" style="color:black;">
+        <a [routerLink]="['/login']">Logout</a>
+    </li>
+</ul>
+<ul class="nav navbar-nav " style="float: right; margin-right: 10px;">
+    <li class="nav-item">
+        <h4>Welcome {{currentUser.firstName}}!</h4>
+    </li>
+</ul>
+</div>
+<br>
+<div *ngIf="chart">
+    <canvas id="canvas">{{ chart }}</canvas>
+  </div>
+
+
+<!-- <h1>Hi {{currentUser.firstName}}!</h1>
+<p>You're logged in with Angular 6!!</p>
+<h3>All registered users:</h3>
+<ul>
+    <li *ngFor="let user of users">
+        {{user.username}} ({{user.firstName}} {{user.lastName}})
+        - <a (click)="deleteUser(user.id)" class="text-danger">Delete</a>
+    </li>
+</ul>
+<p><a [routerLink]="['/login']">Logout</a></p> -->
